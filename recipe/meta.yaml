@@ -48,7 +48,6 @@ test:
   commands:
     - andes --help
     - andesplot --help
-    - pytest
 
 about:
   home: https://github.com/cuihantao/andes
