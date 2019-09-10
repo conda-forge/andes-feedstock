@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.8" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11ce641830746c9e2fdae16117c09fc2994858e077e3e2b7baed97d3b790e6ad
+  sha256: 306c0a8b40301a557657c8c987563bb275e686347db483d8d875f139c68c3e95
 
 build:
   number: 0
@@ -46,6 +46,7 @@ test:
   commands:
     - andes --help
     - andesplot --help
+    - pytest
 
 about:
   home: https://github.com/cuihantao/andes
