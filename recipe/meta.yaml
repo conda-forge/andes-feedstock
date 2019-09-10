@@ -10,7 +10,7 @@ source:
   sha256: 306c0a8b40301a557657c8c987563bb275e686347db483d8d875f139c68c3e95
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - andes = andes.main:main
     - andesplot = andes.plot:main
@@ -46,7 +46,6 @@ test:
   commands:
     - andes --help
     - andesplot --help
-    - pytest
 
 about:
   home: https://github.com/cuihantao/andes
