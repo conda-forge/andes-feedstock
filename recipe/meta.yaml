@@ -10,7 +10,7 @@ source:
   sha256: 306c0a8b40301a557657c8c987563bb275e686347db483d8d875f139c68c3e95
 
 build:
-  number: 1
+  number: 2
   entry_points:
     - andes = andes.main:main
     - andesplot = andes.plot:main
