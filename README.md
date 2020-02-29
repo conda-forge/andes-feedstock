@@ -3,7 +3,7 @@ About andes
 
 Home: https://github.com/cuihantao/andes
 
-Package license: Apache Software
+Package license: GNU Public License v3 or later (GPLv3+)
 
 Feedstock license: BSD 3-Clause
 
