@@ -29,7 +29,7 @@ requirements:
     - sympy
     - pandas
     - xlrd
-    - xlswriter
+    - xlsxwriter
     - tqdm
     - pyyaml
     - coloredlogs
