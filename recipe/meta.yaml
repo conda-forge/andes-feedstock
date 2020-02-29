@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9b0490a5197469cb366a95696c58e485e8b4fbf3c01399f58613c1b0718daf0f
+  sha256: 6550138e26259434ba7f4d1dcca3d2ad80e0d9e18043ea5517e13bbeed441fe3
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - andes = andes.cli:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
