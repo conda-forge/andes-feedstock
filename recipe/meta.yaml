@@ -10,7 +10,7 @@ source:
   sha256: 9b0490a5197469cb366a95696c58e485e8b4fbf3c01399f58613c1b0718daf0f
 
 build:
-  number: 0
+  number: 2
   entry_points:
     - andes = andes.cli:main
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
