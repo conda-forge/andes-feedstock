@@ -3,11 +3,11 @@ About andes
 
 Home: https://github.com/cuihantao/andes
 
-Package license: GNU Public License v3 or later (GPLv3+)
+Package license: GNU Public License v3+
 
 Feedstock license: BSD 3-Clause
 
-Summary: Another Power System Simulator
+Summary: A hybrid symbolic-numeric power system simulator
 
 
 

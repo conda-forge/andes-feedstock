@@ -1,20 +1,20 @@
 {% set name = "andes" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6550138e26259434ba7f4d1dcca3d2ad80e0d9e18043ea5517e13bbeed441fe3
+  sha256: 552fb6b339e52b6918ae75417d62c04220e91996f65898b95f4ce1793713948a
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - andes = andes.cli:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
-  skip: True  # [py<35]
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  skip: true  # [py<35]
 
 requirements:
   host:
@@ -45,11 +45,11 @@ test:
 
 about:
   home: https://github.com/cuihantao/andes
-  license: GNU Public License v3+
+  license: GNU General Public v3+
   license_family: GPL3
   license_file: LICENSE.txt
-  summary: A hybrid symbolic-numeric power system simulator
-  doc_url: https://andes.readthedocs.io 
+  summary: A Python package for power system symbolic modeling and numerical simulation
+  doc_url: https://andes.readthedocs.io
   dev_url: https://github.com/cuihantao/andes
 
 extra:
