@@ -45,10 +45,10 @@ test:
 
 about:
   home: https://github.com/cuihantao/andes
-  license: GNU Public License v3+
+  license: GNU General Public v3+
   license_family: GPL3
   license_file: LICENSE.txt
-  summary: A hybrid symbolic-numeric power system simulator
+  summary: A Python package for power system symbolic modeling and numerical simulation
   doc_url: https://andes.readthedocs.io
   dev_url: https://github.com/cuihantao/andes
 
