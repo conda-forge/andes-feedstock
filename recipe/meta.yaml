@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 552fb6b339e52b6918ae75417d62c04220e91996f65898b95f4ce1793713948a
+  sha256: f020c784bbaeb73780fafa5b739c6ab608c2ff0ddc86e755e9f3f726d9250afb
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - xlsxwriter
     - tqdm
     - pyyaml
+    - pathos
     - coloredlogs
     - matplotlib-base
 
