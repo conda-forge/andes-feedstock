@@ -3,7 +3,7 @@ About andes
 
 Home: https://github.com/cuihantao/andes
 
-Package license: GNU General Public v3+
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
