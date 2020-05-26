@@ -7,7 +7,7 @@ Package license: GPL-3.0-or-later
 
 Feedstock license: BSD 3-Clause
 
-Summary: A Python package for power system symbolic modeling and numerical simulation
+Summary: Python Software for Symbolic Power System Modeling and Numerical Analysis
 
 
 
