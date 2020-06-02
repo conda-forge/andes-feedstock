@@ -10,7 +10,7 @@ source:
   sha256: 06be7f14ad63b04cee2e12997b4b49018cdc7c7d9e938211c031f600050fe93c
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - andes = andes.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -23,10 +23,10 @@ requirements:
   run:
     - python
     - dill
-    - cvxopt
+    - cvxopt>=1.2.3
     - numpy
     - scipy
-    - sympy
+    - sympy<1.6
     - pandas
     - xlrd
     - xlsxwriter
