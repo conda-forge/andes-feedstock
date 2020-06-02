@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 063abb2cf612cc1e287b3d21db8d290fc84d125aac306d07697596cefadf82e7
+  sha256: 37a5d3ddd1c251ef7af9e98c29fbbb1a908ac5594c5709e60048fe86f60cd4fc
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - andes = andes.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -23,10 +23,10 @@ requirements:
   run:
     - python
     - dill
-    - cvxopt>=1.2.3
+    - cvxopt >=1.2.3
     - numpy
     - scipy
-    - sympy<1.6
+    - sympy <1.6
     - pandas
     - xlrd
     - xlsxwriter
