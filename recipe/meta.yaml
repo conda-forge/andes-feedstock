@@ -52,6 +52,9 @@ about:
   summary: Python Software for Symbolic Power System Modeling and Numerical Analysis
   doc_url: https://andes.readthedocs.io
   dev_url: https://github.com/cuihantao/andes
+  description: |
+    ANDES is a Python Software for Symbolic Power System Modeling and Numerical Analysis.
+    Check out the introduction in the GitHub repository and documentation.
 
 extra:
   recipe-maintainers:
