@@ -9,6 +9,8 @@ Feedstock license: BSD-3-Clause
 
 Summary: Python Software for Symbolic Power System Modeling and Numerical Analysis
 
+ANDES is a Python Software for Symbolic Power System Modeling and Numerical Analysis.
+Check out the introduction in the GitHub repository and documentation.
 
 
 Current build status
