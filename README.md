@@ -5,9 +5,13 @@ Home: https://github.com/cuihantao/andes
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/andes-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Software for Symbolic Power System Modeling and Numerical Analysis
+
+Development: https://github.com/cuihantao/andes
+
+Documentation: https://andes.readthedocs.io
 
 ANDES is a Python Software for Symbolic Power System Modeling and Numerical Analysis.
 Check out the introduction in the GitHub repository and documentation.
