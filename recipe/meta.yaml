@@ -10,39 +10,42 @@ source:
   sha256: 2a2d91aa91916f52be626700c124e47e9905366ee68fc5e292cdf8bc42822892
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   entry_points:
     - andes = andes.cli:main
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
-  skip: true  # [py<35]
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
-    - dill
+    - python >=3.5
+    - coloredlogs
     - cvxopt >=1.2.3
+    - dill
+    - matplotlib-base
     - numpy
-    - scipy
-    - sympy <1.6
     - pandas
+    - pathos
+    - pyyaml
+    - scipy
+    - sympy ==1.5.1
+    - tqdm
     - xlrd
     - xlsxwriter
-    - tqdm
-    - pyyaml
-    - pathos
-    - coloredlogs
-    - matplotlib-base
 
 test:
   imports:
     - andes
-  requires:
-    - pytest
+    - andes.core
   commands:
-    - andes
+    - pip check
+    - andes --help
+  requires:
+    - pip
+
 
 about:
   home: https://github.com/cuihantao/andes
