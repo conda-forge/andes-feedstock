@@ -34,6 +34,7 @@ requirements:
     - sympy ==1.5.1
     - tqdm
     - xlrd
+    - openpyxl
     - xlsxwriter
 
 test:
@@ -42,7 +43,7 @@ test:
     - andes.core
   commands:
     - pip check
-    - andes --help
+    - andes selftest
   requires:
     - pip
 
