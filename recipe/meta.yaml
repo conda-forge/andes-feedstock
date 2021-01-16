@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "1.2.8" %}
+{% set version = "1.2.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db006fcc89f6bf819f2967e1c1f66348f89b71406956ed5f543713e522e4d3dd
+  sha256: 2723e70758fc1bdd93a7b5f17ca3716a8825fe6932382fee5222dc739d917665
 
 build:
   number: 0
@@ -31,9 +31,9 @@ requirements:
     - pathos
     - pyyaml
     - scipy
-    - sympy ==1.5.1
+    - sympy
     - tqdm
-    - xlrd
+    - xlrd ==1.2
     - openpyxl
     - xlsxwriter
 
