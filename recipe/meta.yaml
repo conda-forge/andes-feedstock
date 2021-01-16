@@ -31,7 +31,7 @@ requirements:
     - pathos
     - pyyaml
     - scipy
-    - sympy ==1.5
+    - sympy ==1.5.1
     - tqdm
     - xlrd ==1.2
     - openpyxl
