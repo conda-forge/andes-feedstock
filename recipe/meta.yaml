@@ -10,7 +10,7 @@ source:
   sha256: 5f5b9a82c4d8cecb92cbf40417d0e447f263ce763379049b2960e1c73ebf1f71
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - andes = andes.cli:main
@@ -26,12 +26,12 @@ requirements:
     - cvxopt >=1.2.3
     - dill
     - matplotlib-base
-    - numpy ==1.19.5
+    - numpy
     - pandas
     - pathos
     - pyyaml
     - scipy
-    - sympy ==1.5.1
+    - sympy
     - tqdm
     - xlrd ==1.2
     - openpyxl
