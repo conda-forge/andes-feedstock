@@ -37,6 +37,7 @@ requirements:
     - openpyxl
     - xlsxwriter
     - chardet
+    - numba
 
 test:
   imports:
