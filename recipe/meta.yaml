@@ -38,6 +38,7 @@ requirements:
     - xlsxwriter
     - chardet
     - numba
+    - psutil
 
 test:
   imports:
