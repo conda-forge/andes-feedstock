@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - coloredlogs
-    - kvxopt >=1.2.3
+    - kvxopt >=1.3.0.0
     - dill
     - matplotlib-base
     - numpy
@@ -31,7 +31,7 @@ requirements:
     - pathos
     - pyyaml
     - scipy
-    - sympy >=1.6,<1.9
+    - sympy >=1.6,<=1.10.1,!=1.10.0
     - tqdm
     - xlrd ==1.2
     - openpyxl
