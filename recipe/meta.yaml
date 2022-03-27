@@ -33,7 +33,6 @@ requirements:
     - scipy
     - sympy >=1.6,<=1.10.1,!=1.10.0
     - tqdm
-    - xlrd ==1.2
     - openpyxl
     - xlsxwriter
     - chardet
