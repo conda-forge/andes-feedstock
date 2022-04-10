@@ -38,6 +38,7 @@ requirements:
     - chardet
     - numba
     - psutil
+    - texttable
 
 test:
   imports:
