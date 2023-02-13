@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "1.8.5" %}
+{% set version = "1.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 728419fdaf438896cb8b3f636f900b5520adcef8da1ba123afd8af5df4bb4568
+  sha256: 1dfe87a48143e52bdc324063236907f6eef093f852c8136ed700223a68f24cd6
 
 build:
   number: 0
