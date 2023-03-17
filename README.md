@@ -1,11 +1,11 @@
-About andes
-===========
+About andes-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/andes-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cuihantao/andes
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/andes-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Software for Symbolic Power System Modeling and Numerical Analysis
 
