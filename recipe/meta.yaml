@@ -45,7 +45,7 @@ test:
     - andes
     - andes.core
   commands:
-    - pip list
+    - pip check
     - andes selftest
   requires:
     - pip
