@@ -10,7 +10,7 @@ source:
   sha256: ddc415386b5007f34872e35a0dcd7f22ea92f7414f3ac480618bf5aea093c564
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - andes = andes.cli:main
@@ -45,7 +45,7 @@ test:
     - andes
     - andes.core
   commands:
-    - pip list
+    - pip check
     - andes selftest
   requires:
     - pip
