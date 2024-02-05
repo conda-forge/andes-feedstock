@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "1.8.10" %}
+{% set version = "1.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52a4ae301ea20a2c8325f06d5b45b51c4f3cb3db0b147c9cbbbd1c0e556b048b
+  sha256: ddc415386b5007f34872e35a0dcd7f22ea92f7414f3ac480618bf5aea093c564
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - andes = andes.cli:main
