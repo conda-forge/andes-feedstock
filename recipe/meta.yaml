@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0c43e83420abf6b14c71995e4671273daeb484b21122579ed17d4221713f67f8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - andes = andes.cli:main
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - kvxopt >=1.3.0.0
     - numpy
     - scipy
@@ -49,6 +49,7 @@ test:
     - andes selftest
   requires:
     - pip
+    - python {{ python_min }}
 
 
 about:
