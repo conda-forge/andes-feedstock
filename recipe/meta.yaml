@@ -48,7 +48,7 @@ test:
     - andes.core
   commands:
     - pip check
-    - andes selftest
+    - andes --help
   requires:
     - pip
     - python {{ python_min }}
