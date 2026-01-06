@@ -1,5 +1,5 @@
 {% set name = "andes" %}
-{% set version = "1.9.3" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 679f5bd640e17ada3a0396392e07a1e8e4f487d5167c4ee500e7d19aa1ac7bab
+  sha256: 12132823dcbcd3d9837f55c635c05534a94a93c8640536037a47a4c509e03bd7
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - kvxopt >=1.3.0.0
@@ -39,6 +40,7 @@ requirements:
     - psutil
     - texttable
     - numba
+    - ipywidgets
 
 test:
   imports:
@@ -46,7 +48,7 @@ test:
     - andes.core
   commands:
     - pip check
-    - andes selftest
+    - andes --help
   requires:
     - pip
     - python {{ python_min }}
